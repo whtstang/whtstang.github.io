@@ -9,6 +9,19 @@
 //  console.log(newString);
 //}
 
+// --- Show Code Function --- //
+
+function showCode() {
+  const x = document.getElementById("code");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+// ---- Encode Function --- //
+
 encode = (string) => {
   const newString = string
     .replace(/a/g, 1)
@@ -20,6 +33,8 @@ encode = (string) => {
   console.log(newString);
 }
 
+// --- Decode Function ---//
+
 decode = (string) => {
   const newString = string
     .replace(/1/g, "a")
@@ -30,3 +45,8 @@ decode = (string) => {
   
   console.log(newString);
 }
+
+
+
+
+
