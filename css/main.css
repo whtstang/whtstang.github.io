@@ -134,7 +134,7 @@ h4 {
 
 .notebook {
   background-color: #f5f5f5;
-  width: 650px;
+  width: 600px;
   margin-top: 20px;
   margin-right: 50px;
   margin-bottom:50px;
@@ -143,7 +143,7 @@ h4 {
 }
 .list {
   color: #555;
-  font-size: 22px;
+  font-size: 18px;
   padding: 0;
   width: auto;
   font-family: courier, monospace;
@@ -169,7 +169,7 @@ h4 {
   border-right: 1px solid #ffaa9f;
   width: 3px;
   float: left;
-  height: 642px;
+  height: 532px;
   margin-left: 40px;
 }
 .lines2 {
@@ -209,7 +209,7 @@ h4 {
   border: 1px solid red;
   padding: 5px;
   width: 400px;
-  height: 400px;
+  height: 700px;
   margin-top: 20px;
   margin-right: 50px;
   margin-bottom:50px;
@@ -221,14 +221,14 @@ button {
   border-radius: 5px;
   color: #1d3c6a;
   font-size: 24px;
-  width: 400px;
+  width: 200px;
   padding: 10px 0;
-  margin: 0px -20px;
+  margin: 5px;
   outline: none;
   cursor: pointer;
 }
 #code {
-  display: none;
+  margin: 10px;
 }
 
 

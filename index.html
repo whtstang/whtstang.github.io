@@ -39,25 +39,44 @@
           <li class="step">Step 2:</li>
           <li> Now create a function called <b>decode()</b> to turn the numbers back into vowels according to the same pattern shown above.</li>
           <li>For example, <b>decode("h3 th2r2")</b> would return <b>"hi there"</b>.</li>
-          <li><button onclick="showCode()">See Code</button></li>
+          <li><button id="show-1">See Code #1</button><button id="show-2">See Code #2</button></li>
         </ul>
       </div>
       <div class="codebox">
-        <div class="item-2" id="code">
-          <pre>
-            <code>
-              encode = (string) => {
-                const newString = string
-                  .replace(/a/g, 1)
-                  .replace(/e/g, 2)
-                  .replace(/i/g, 3)
-                  .replace(/o/g, 4)
-                  .replace(/u/g, 5)
-                
-                console.log(newString);
-              }
-            </code>
-          </pre>
+        <div class="item-2" id="hiddenCode-1" style="display:none">
+<pre>
+  <code>
+    // - Step 1: encode function -//
+    encode = (string) => {
+      const newString = string
+        .replace(/a/g, 1)
+        .replace(/e/g, 2)
+        .replace(/i/g, 3)
+        .replace(/o/g, 4)
+        .replace(/u/g, 5)
+      
+      console.log(newString);
+    }
+  </code>
+</pre>
+        </div>
+        
+        <div class="item-2" id="hiddenCode-2" style="display:none">
+<pre>
+  <code>
+    // - Step 2: decode function -//
+    decode = (string) => {
+      const newString = string
+        .replace(/1/g, "a")
+        .replace(/2/g, "e")
+        .replace(/3/g, "i")
+        .replace(/4/g, "o")
+        .replace(/5/g, "u")
+      
+      console.log(newString);
+    }
+  </code>
+</pre>
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ body {
   flex: 1;
 }
 .codebox {
-  align-self: center;
+  align-self: flex-start;
   text-align: left;
 }
 

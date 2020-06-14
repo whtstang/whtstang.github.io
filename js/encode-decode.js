@@ -11,14 +11,13 @@
 
 // --- Show Code Function --- //
 
-function showCode() {
-  const x = document.getElementById("code");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+$('#show-1').click(function() {
+  $('#hiddenCode-1').show();
+});
+
+$('#show-2').click(function() {
+  $('#hiddenCode-2').show();
+});
 
 // ---- Encode Function --- //
 
