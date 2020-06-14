@@ -170,7 +170,7 @@ h4 {
   border-right: 1px solid #ffaa9f;
   width: 3px;
   float: left;
-  height: 532px;
+  height: 670px;
   margin-left: 40px;
 }
 .lines2 {
@@ -201,6 +201,32 @@ h4 {
   text-decoration: underline;
   font-weight: bold;
 }
+#runBtn {
+  background: #dae1e4;
+  border: none;
+  border-radius: 5px;
+  color: #1d3c6a;
+  font-size: 24px;
+  width: 500px;
+  padding: 10px 0;
+  margin: 5px;
+  margin-left: 20px;
+  outline: none;
+  cursor: pointer;
+}
+#runBtn:hover {
+  background: #00A4FF;
+  border: none;
+  border-radius: 5px;
+  color: #1d3c6a;
+  font-size: 24px;
+  width: 500px;
+  padding: 10px 0;
+  margin: 5px;
+  margin-left: 20px;
+  outline: none;
+  cursor: pointer;
+}
 
 /* ================================= 
   Code Box Design
@@ -219,6 +245,18 @@ h4 {
 }
 button {
   background: #dae1e4;
+  border: none;
+  border-radius: 5px;
+  color: #1d3c6a;
+  font-size: 24px;
+  width: 200px;
+  padding: 10px 0;
+  margin: 5px;
+  outline: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #00A4FF;
   border: none;
   border-radius: 5px;
   color: #1d3c6a;

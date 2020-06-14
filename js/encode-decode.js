@@ -1,13 +1,3 @@
-//function encode(string) {
-//  const newString = string
-//    .replace(/a/g, 1)
-//    .replace(/e/g, 2)
-//    .replace(/i/g, 3)
-//    .replace(/o/g, 4)
-//    .replace(/u/g, 5)
-//  
-//  console.log(newString);
-//}
 
 // --- Show Code Function --- //
 
@@ -29,7 +19,7 @@ encode = (string) => {
     .replace(/o/g, 4)
     .replace(/u/g, 5)
   
-  console.log(newString);
+  return (newString);
 }
 
 // --- Decode Function ---//
@@ -45,7 +35,16 @@ decode = (string) => {
   console.log(newString);
 }
 
+// --- User input to encode ---//
 
+$('#runBtn').click(function() {
+  const userString = $('#inputString').val();
+  const encoded = encode(userString);
+  
+  $('#encodedString').text(encoded);
+  $('#inputString').val('');
+ 
+});
 
 
 
