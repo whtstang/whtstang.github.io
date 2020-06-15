@@ -144,7 +144,7 @@ h4 {
 }
 .list {
   color: #555;
-  font-size: 18px;
+  font-size: 16px;
   padding: 0;
   width: auto;
   font-family: courier, monospace;
@@ -170,7 +170,7 @@ h4 {
   border-right: 1px solid #ffaa9f;
   width: 3px;
   float: left;
-  height: 670px;
+  height: 850px;
   margin-left: 40px;
 }
 .lines2 {
@@ -201,40 +201,21 @@ h4 {
   text-decoration: underline;
   font-weight: bold;
 }
-#runBtn {
-  background: #dae1e4;
-  border: none;
-  border-radius: 5px;
-  color: #1d3c6a;
-  font-size: 24px;
-  width: 500px;
-  padding: 10px 0;
-  margin: 5px;
-  margin-left: 20px;
-  outline: none;
-  cursor: pointer;
+/*
+input {
+  
+  padding: 3px 5px;
+  margin: 4px 0;
+  box-sizing: border-box;
 }
-#runBtn:hover {
-  background: #00A4FF;
-  border: none;
-  border-radius: 5px;
-  color: #1d3c6a;
-  font-size: 24px;
-  width: 500px;
-  padding: 10px 0;
-  margin: 5px;
-  margin-left: 20px;
-  outline: none;
-  cursor: pointer;
-}
+*/
 
 /* ================================= 
   Code Box Design
 ==================================== */
 
 .codebox {
-  border: 1px solid red;
-  background-color:    #dadadf;
+  border: 8px solid #755328;
   padding: 5px;
   width: 400px;
   height: 700px;
@@ -243,15 +224,34 @@ h4 {
   margin-bottom:50px;
   margin-left: 50px;
 }
+.img {
+  background-image: url("../img/chalkboard-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+pre {
+  color: white;
+  font-weight: bold;
+}
+#code {
+  margin: 10px;
+}
+
+/* ================================= 
+  Buttons
+==================================== */
+
 button {
   background: #dae1e4;
   border: none;
   border-radius: 5px;
   color: #1d3c6a;
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: bold;
   width: 200px;
-  padding: 10px 0;
-  margin: 5px;
+  padding: 5px;
+  margin: 0;
   outline: none;
   cursor: pointer;
 }
@@ -260,21 +260,42 @@ button:hover {
   border: none;
   border-radius: 5px;
   color: #1d3c6a;
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
   width: 200px;
-  padding: 10px 0;
+  padding: 5px;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+}
+.runBtn {
+  background: #dae1e4;
+  border: none;
+  border-radius: 5px;
+  color: #1d3c6a;
+  font-size: 18px;
+  font-weight: bold;
+  width: 500px;
+  padding: 5px;
   margin: 5px;
   outline: none;
   cursor: pointer;
 }
-#code {
-  margin: 10px;
+.runBtn:hover {
+  background: #00A4FF;
+  border: none;
+  border-radius: 5px;
+  color: #1d3c6a;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  width: 500px;
+  padding: 5px;
+  margin: 5px;
+  outline: none;
+  cursor: pointer;
 }
-
-
-
-
-
 
 
 

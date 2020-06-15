@@ -36,15 +36,20 @@
           <li class="step">Step 1:</li>
           <li>Create a function called <b>encode()</b> to replace all the lowercase vowels in a given string with numbers according to the following pattern:</li>
           <li><b>a -> 1, e -> 2, i -> 3, o -> 4, u -> 5</b></li>
+          <li><button id="show-1">See Code #1</button></li>
           <li class="step">Step 2:</li>
           <li> Now create a function called <b>decode()</b> to turn the numbers back into vowels according to the same pattern shown above.</li>
           <li>For example, <b>decode("h3 th2r2")</b> would return <b>"hi there"</b>.</li>
-          <li><button id="show-1">See Code #1</button><button id="show-2">See Code #2</button></li>
-          <li><label>Enter words to encode:</label><input type="text" id="inputString"><button id="runBtn">Run Code</button></li>
-          <li>Your encoded string -> <span id="encodedString"></span></li>
+          <li><button id="show-2">See Code #2</button></li>
+          <li><label>Enter text to encode:</label><input type="text" id="inputString-1"></li>
+          <li><button class="runBtn"id="runBtn-1">Encode</button></li>
+          <li><b>Your encoded text -> <span id="encodedString"></span></b></li>
+          <li><label>Enter text to decode:</label><input type="text" id="inputString-2"></li>
+          <li><button class="runBtn"id="runBtn-2">Decode</button></li>
+          <li><b>Your decoded text -> <span id="decodedString"></span></b></li>
         </ul>
       </div>
-      <div class="codebox">
+      <div class="codebox img">
         <div class="item-2" id="hiddenCode-1" style="display:none">
 <pre>
   <code>
@@ -57,7 +62,7 @@
         .replace(/o/g, 4)
         .replace(/u/g, 5)
       
-      console.log(newString);
+      return (newString);
     }
   </code>
 </pre>
@@ -75,7 +80,7 @@
         .replace(/4/g, "o")
         .replace(/5/g, "u")
       
-      console.log(newString);
+      return (newString);
     }
   </code>
 </pre>

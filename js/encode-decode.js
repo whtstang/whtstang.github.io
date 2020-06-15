@@ -32,19 +32,34 @@ decode = (string) => {
     .replace(/4/g, "o")
     .replace(/5/g, "u")
   
-  console.log(newString);
+  return (newString);
 }
 
 // --- User input to encode ---//
 
-$('#runBtn').click(function() {
-  const userString = $('#inputString').val();
+$('#runBtn-1').click(function() {
+  const userString = $('#inputString-1').val();
   const encoded = encode(userString);
   
   $('#encodedString').text(encoded);
-  $('#inputString').val('');
+  $('#inputString-1').val('');
  
 });
+
+// --- User input to decode ---//
+
+$('#runBtn-2').click(function() {
+  const userString = $('#inputString-2').val();
+  const encoded = decode(userString);
+  
+  $('#decodedString').text(encoded);
+  $('#inputString-2').val('');
+ 
+});
+
+
+
+
 
 
 
