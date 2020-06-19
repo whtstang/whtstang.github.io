@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremiah's Workspace</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../legend/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1 class="name"><a id="home-link" href="../index.html">Jeremiah's Workspace</a></h1>
+      <ul class="main-nav">
+        <li><a href="../pages/challenges.html">Project Shift Challenges</a></li>
+        <li><a href="../pages/los.html">Legend of Satoshi</a></li>
+      </ul>
+    </header>
+    
+    <div class="banner">
+      <h1 class="headline">The Legend of Satoshi</h1>
+      <span class="tagline">A top down 16-bit action game</span>
+    </div>
+    
+    <div class="gamebox">
+      <canvas id="losCanvas"></canvas>
+    </div>
+    
+    <footer class="main-footer">
+      <div class="footer-inner">
+        <span>&copy;2020 Jeremiah's Workspace</span>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+    <script src="../legend/script.js"></script>
+  </body>
+</html>

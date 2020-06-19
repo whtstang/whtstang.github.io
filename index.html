@@ -13,132 +13,51 @@
   <body>
     
     <header class="main-header">
-      <h1 class="name"><a href="#">Jeremiah's Workspace</a></h1>
+      <h1 class="name"><a id="home-link" href="#">Jeremiah's Workspace</a></h1>
       <ul class="main-nav">
-        <li><a href="#week1">Week 1</a></li>
-        <li><a href="#week2">Week 2</a></li>
-        <li><a href="#week3">Week 3</a></li>
-        <li><a href="#week4">Week 4</a></li>
+        <li><a href="pages/challenges.html">Project Shift Challenges</a></li>
+        <li><a href="pages/los.html">Legend of Satoshi</a></li>
       </ul>
     </header>
     
     <div class="banner">
       <img class="headshot" src="img/jj.jpg" alt="Picture of Jeremiah James">
-      <h1 class="headline">Project Shift Weekly Challenges</h1>
-      <span class="tagline">Coding for the challange!</span>
+      <h1 class="headline">Coding for the challenge!</h1>
+      <span class="tagline">One project at a time.</span>
     </div>
-    
-    <div class="container">
-      <div class="notebook item-1">
-        <h4><a name="week1"></a>Week 1: Encode/Decode (June 10-16) </h4>
-        <div class="lines1"></div>
-        <ul class="list">
-          <li class="step">Step 1:</li>
-          <li>Create a function called <b>encode()</b> to replace all the lowercase vowels in a given string with numbers according to the following pattern:</li>
-          <li><b>a -> 1, e -> 2, i -> 3, o -> 4, u -> 5</b></li>
-          <li><button id="show-1">See Code #1</button></li>
-          <li class="step">Step 2:</li>
-          <li> Now create a function called <b>decode()</b> to turn the numbers back into vowels according to the same pattern shown above.</li>
-          <li>For example, <b>decode("h3 th2r2")</b> would return <b>"hi there"</b>.</li>
-          <li><button id="show-2">See Code #2</button></li>
-          <li><label>Enter text to encode:</label><input type="text" id="inputString-1"></li>
-          <li><button class="runBtn"id="runBtn-1">Encode</button></li>
-          <li><b>Your encoded text -> <span id="encodedString"></span></b></li>
-          <li><label>Enter text to decode:</label><input type="text" id="inputString-2"></li>
-          <li><button class="runBtn"id="runBtn-2">Decode</button></li>
-          <li><b>Your decoded text -> <span id="decodedString"></span></b></li>
-        </ul>
-      </div>
-      <div class="codebox img">
-        <div class="item-2" id="hiddenCode-1" style="display:none">
-<pre>
-  <code>
-    // - Step 1: encode function -//
-    encode = (string) => {
-      const newString = string
-        .replace(/a/g, 1)
-        .replace(/e/g, 2)
-        .replace(/i/g, 3)
-        .replace(/o/g, 4)
-        .replace(/u/g, 5)
-      
-      return (newString);
-    }
-  </code>
-</pre>
-        </div>
+  
+    <div class="row">		
+        <div class="primary col">
+          <h2>Coding Challenge</h2>
+          <p>Check out my solutions to Project Shift's ongoing weekly<a href="pages/challenges.html"> Coding Challenge</a></p>
+          <img class="feat-img" src="img/projectShift.png" alt="Project Shift">
+          <p>Change Careers with North Carolina's Top Performing Software Engineering Education.</p>
+          <p>Visit<a href="https://projectshift.io/"> Project Shift</a></p>
+        </div><!--/.primary-->
         
-        <div class="item-2" id="hiddenCode-2" style="display:none">
-<pre>
-  <code>
-    // - Step 2: decode function -//
-    decode = (string) => {
-      const newString = string
-        .replace(/1/g, "a")
-        .replace(/2/g, "e")
-        .replace(/3/g, "i")
-        .replace(/4/g, "o")
-        .replace(/5/g, "u")
-      
-      return (newString);
-    }
-  </code>
-</pre>
-        </div>
+        <div class="secondary col">
+          <h2>Welcome!</h2>
+          <p>This is my site to display small projects that I have built while learning to code.</p>
+          <p></p>
+          <p></p>
+        </div><!--/.secondary-->
+        
+        <div class="tertiary col">
+          <h2>Legend of Satoshi</h2>
+          <img class="feat-img" src="img/LoS.png" alt="Legen of Satoshi">
+          <p><strong>The Game: </strong>A top down first person action game. Hodler is out to find items to help him stack Sats! Play the <a href="pages/los.html">game</a>!</p>
+          <p><strong>The Stack: </strong>This game was built using JavaScript and the <a href="https://phaser.io/">Phaser</a> open source framework. </p>
+          <p><strong>Status: </strong>Last update was April 2019. This game is currently unfinished.</p>
+        </div><!--/.tertiary-->	
       </div>
-    </div>
-    
-<!--
-    <div class="notebook">
-      <h4><a name="week2"></a>Week 2: ?? (June 16-23)</h4>
-      <div class="lines2"></div>
-      <ul class="list">
-        <li class="step"></li>
-        <li></li>
-        <li class="step"></li>
-        <li></li>
-        <li></li>
-        <li><button type="button">See Code</button></li>
-      </ul>
-    </div>
--->
-    
-<!--
-    <div class="notebook">
-      <h4><a name="week3"></a>Week 3: ?? (June 23-30)</h4>
-      <div class="lines3"></div>
-      <ul class="list">
-        <li class="step"></li>
-        <li></li>
-        <li class="step"></li>
-        <li></li>
-        <li></li>
-        <li><button type="button">See Code</button></li>
-      </ul>
-    </div> 
--->
-    
-<!--
-    <div class="notebook">
-      <h4><a name="week4"></a>Week 4: ?? (June 30-July 07)</h4>
-      <div class="lines4"></div>
-      <ul class="list">
-        <li class="step"></li>
-        <li></li>
-        <li class="step"></li>
-        <li></li>
-        <li></li>
-        <li><button type="button">See Code</button></li>
-      </ul>
-    </div> 
--->
+
     <footer class="main-footer">
       <div class="footer-inner">
         <span>&copy;2020 Jeremiah's Workspace</span>
       </div>
     </footer>
     <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/encode-decode.js"></script>
+    <script src="test.js"></script>
   </body>
 
 </html>

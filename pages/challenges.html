@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremiah's Workspace</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/flexbox.css">
+       
+  </head>
+  <body>
+    
+    <header class="main-header">
+      <h1 class="name"><a id="home-link" href="../index.html">Jeremiah's Workspace</a></h1>
+      <ul class="main-nav">
+        <li><a href="../pages/challenges.html">Project Shift Challenges</a></li>
+        <li><a href="../pages/los.html">Legend of Satoshi</a></li>
+      </ul>
+    </header>
+    
+    <div class="banner">
+      <h1 class="headline">Project Shift Weekly Challenges</h1>
+      <span class="tagline">Coding for the challange!</span><br>
+      <div class="container-nav secondary-nav">
+        <a class ="item" href="#week1">
+          <div>Week1</div>
+        </a>
+        <a class="item" href="#week2">
+          <div>Week2</div>
+        </a>
+      </div>
+    </div>
+    
+<!--  Begin Week 1  -->
+    <div class="container">
+      <div class="notebook item-1">
+        <h4><a name="week1"></a>Week 1: Encode/Decode<br>(June 10-16) </h4>
+        <div class="lines1"></div>
+        <ul class="list">
+          <li class="step">Step 1:</li>
+          <li>Create a function called <b>encode()</b> to replace all the lowercase vowels in a given string with numbers according to the following pattern:</li>
+          <li><b>a -> 1, e -> 2, i -> 3, o -> 4, u -> 5</b></li>
+          <li><button id="show-1">See Code #1</button></li>
+          <li class="step">Step 2:</li>
+          <li> Now create a function called <b>decode()</b> to turn the numbers back into vowels according to the same pattern shown above.</li>
+          <li>For example, <b>decode("h3 th2r2")</b> would return <b>"hi there"</b>.</li>
+          <li><button id="show-2">See Code #2</button></li>
+          <li><label>Enter text to encode:</label><input type="text" id="inputString-1"></li>
+          <li><button class="runBtn"id="runBtn-1">Encode</button></li>
+          <li><b>Your encoded text -> <span id="encodedString"></span></b></li>
+          <li><label>Enter text to decode:</label><input type="text" id="inputString-2"></li>
+          <li><button class="runBtn"id="runBtn-2">Decode</button></li>
+          <li><b>Your decoded text -> <span id="decodedString"></span></b></li>
+        </ul>
+      </div>
+      <div class="codebox img">
+        <div class="item-2" id="hiddenCode-1" style="display:none">
+<pre>
+  <code>
+    // - Step 1: encode function -//
+    encode = (string) => {
+      const newString = string
+        .replace(/a/g, 1)
+        .replace(/e/g, 2)
+        .replace(/i/g, 3)
+        .replace(/o/g, 4)
+        .replace(/u/g, 5)
+      
+      return (newString);
+    }
+  </code>
+</pre>
+        </div>
+        
+        <div class="item-2" id="hiddenCode-2" style="display:none">
+<pre>
+  <code>
+    // - Step 2: decode function -//
+    decode = (string) => {
+      const newString = string
+        .replace(/1/g, "a")
+        .replace(/2/g, "e")
+        .replace(/3/g, "i")
+        .replace(/4/g, "o")
+        .replace(/5/g, "u")
+      
+      return (newString);
+    }
+  </code>
+</pre>
+        </div>
+      </div>
+    </div> <!-- /End Week 1 -->
+    
+<!--  Begin Week 2  -->
+    <div class="container">
+      <div class="notebook item-1">
+        <h4><a name="week2"></a>Week 2: Sum of Two Numbers<br>(June 16-23) </h4>
+        <div class="lines2"></div>
+        <ul class="list">
+          <li class="step">Step 1:</li>
+          <li>Create a function that returns the sum of the two lowest possible positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.</li>
+          <li>For example, when an array is passed like:</li>
+          <li><b>[19, 5, 42, 2, 77]</b></li>
+          <li>The output should be <b>7</b></li>
+          <li><button id="show-3">See Code</button></li>
+          <li>In another example:</li>
+          <li><b>[10, 343445353, 3453445, 3453545353453]</b></li>
+          <li>The output should be <b>3453455</b></li>
+          <li><button type"button" id="add-button" value="Add">Add # to array</button></li>
+          <li>Your array of numbers -> <b><span id="userArray"></span></b></li>
+          <li><button type"button" id="sum-button" value="Sum">Sum</button></li>
+          <li>The sum of the two lowest numbers -> <b><span id="sumArray"></span></b></li>
+<!--
+          <li><label>Enter numbers:</label><input type="text" id="userInputNumbers"></li>
+          <li><button class="runBtn"id="runBtn-3">Add</button></li>
+          <li><b>The sum of the lowest two numbers -> <span id="sumOfNumbers"></span></b></li>
+-->
+          
+        </ul>
+      </div>
+      <div class="codebox img">
+        <div class="item-2" id="hiddenCode-3" style="display:none">
+<pre>
+  <code>
+//--- sum of the two lowest #s ---//
+
+  let numbers = [];
+  
+  sumNum = () => {
+    numbers.sort((a, b) => a - b);
+    return numbers[0] + numbers[1];  
+  }
+  </code>
+</pre>
+        </div>
+      </div>
+    </div>
+    
+<!--
+    <div class="notebook">
+      <h4><a name="week3"></a>Week 3: ?? (June 23-30)</h4>
+      <div class="lines3"></div>
+      <ul class="list">
+        <li class="step"></li>
+        <li></li>
+        <li class="step"></li>
+        <li></li>
+        <li></li>
+        <li><button type="button">See Code</button></li>
+      </ul>
+    </div> 
+-->
+    
+<!--
+    <div class="notebook">
+      <h4><a name="week4"></a>Week 4: ?? (June 30-July 07)</h4>
+      <div class="lines4"></div>
+      <ul class="list">
+        <li class="step"></li>
+        <li></li>
+        <li class="step"></li>
+        <li></li>
+        <li></li>
+        <li><button type="button">See Code</button></li>
+      </ul>
+    </div> 
+-->
+    <footer class="main-footer">
+      <div class="footer-inner">
+        <span>&copy;2020 Jeremiah's Workspace</span>
+      </div>
+    </footer>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/encode-decode.js"></script>
+    <script src="../js/sum-lowest-numbers.js"></script>
+  </body>
+
+</html>
+
+
+
+
+

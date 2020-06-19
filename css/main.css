@@ -56,6 +56,9 @@ img {
   display: block;
   padding: 10px 15px;
 }
+#home-link {
+  color: black;
+}
 .main-nav a {
   font-size: .95em;
   color: #00A4FF;
@@ -63,6 +66,22 @@ img {
 }
 .main-nav a:hover {
   color: #093a58;
+}
+.secondary-nav {
+  margin-top: 0;
+}
+.secondary-nav a {
+  background: #dae1e4;
+  border: none;
+  border-radius: 5px;
+  color: #1d3c6a;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: .35em;
+  padding-bottom: .35em;
+  margin-right: 10px;
+  outline: none;
+  cursor: pointer;
 }
 
 /* --- Layout Containers ---*/
@@ -86,11 +105,25 @@ img {
   padding-left: 1em;
 }
 .item {
+  background: #dae1e4;
+  border: none;
+  border-radius: 5px;
+  color: #1d3c6a;
+  font-size: 18px;
+  font-weight: bold;
+  width: 200px;
+  padding-top: .35em;
+  padding-bottom: .35em;
+  margin-right: 5px;
+  outline: none;
+  cursor: pointer;
+/*
 	color: #fff;
 	padding: 15px;
 	margin: 5px;	
 	background: #3db5da;
 	border-radius: 3px;
+*/
 }
 .container {
 	margin: 5px auto;
@@ -99,6 +132,11 @@ img {
   border-radius: 5px;
   box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
 }  
+.container-nav {
+	margin: 10px;
+	padding: 0;
+	background: #00A4FF;
+}
 .main-footer {
   background: #d9e4ea;
   padding: 2em 0;
@@ -178,7 +216,7 @@ h4 {
   border-right: 1px solid #ffaa9f;
   width: 3px;
   float: left;
-  height: 165px;
+  height: 720px;
   margin-left: 40px;
 }
 .lines3 {
@@ -218,8 +256,8 @@ input {
   border: 8px solid #755328;
   padding: 5px;
   width: 400px;
-  height: 700px;
-  margin-top: 20px;
+  height: 750px;
+  margin-top: 100px;
   margin-right: 50px;
   margin-bottom:50px;
   margin-left: 50px;
@@ -305,17 +343,21 @@ button:hover {
 
 @media (min-width: 769px) {
 	.main-header,
-	.row,
-  .footer-inner{
-		width: 80%;
+	.row {
+		width: 90%;
 		margin: 0 auto;
-		max-width: 1150px;
 	}
 	.tagline {
 		font-size: 1.4em;
 	}
 }
-
+@media (min-width: 1025px) {
+	.main-header,
+	.row {
+		width: 80%;
+		max-width: 1150px;
+	}
+}
 
 
 

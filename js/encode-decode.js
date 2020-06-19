@@ -2,11 +2,11 @@
 // --- Show Code Function --- //
 
 $('#show-1').click(function() {
-  $('#hiddenCode-1').show();
+  $('#hiddenCode-1').show(1000);
 });
 
 $('#show-2').click(function() {
-  $('#hiddenCode-2').show();
+  $('#hiddenCode-2').show(1000);
 });
 
 // ---- Encode Function --- //
