@@ -1,0 +1,24 @@
+body {
+  background:#eee;
+  font-family:Verdana, Helvetica, Arial, sans-serif;
+  margin:0;
+  padding:0
+}
+h2 {
+  text-align: center;
+}
+.examples{
+  background:#FFF;
+  width:800px;
+  font-size:80%;
+  border:1px #000 solid;
+  margin:3.5em auto 2em;
+  padding:1em 2em 2em
+}
+
+#my_ecard {
+  position:relative; 
+  overflow:hidden; 
+  width:800px; 
+  height:600px;
+}

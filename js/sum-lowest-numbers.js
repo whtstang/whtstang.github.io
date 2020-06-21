@@ -28,27 +28,8 @@ let size = 4;
   btnSum.onclick = () => {
     inputArray.sort((a, b) => a - b);
     showSum.innerHTML = parseInt(inputArray[0]) + parseInt(inputArray[1]);
-    //showSum.innerHTML = sum;
   }
 })();
 
-// --- sum of the two lowest #s --- //
 
-//let numbers = [];
-//
-//sumNum = () => {
-//  numbers.sort((a, b) => a - b);
-//  return numbers[0] + numbers[1];
-//}
-
-// --- User input to add ---//
-
-//$('#runBtn-3').click(function() {
-//  const numbers = $('#userInputNumbers').val();
-//  const sumOfNum = sumNum(numbers);
-//  
-//  $('#sumOfNumbers').text(sumOfNum);
-//  $('#userInputNumbers').val('');
-// 
-//});
 
