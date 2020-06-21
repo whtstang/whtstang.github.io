@@ -1,0 +1,128 @@
+<html>
+<head>
+
+  <title>Fathers Day eCard</title>
+
+  <meta charset="UTF-8">
+
+  <meta name = "description" content = "Father's Day eCard">
+  <meta name = "keywords" content = "html, css, events, mouse, keyboard, mobile first, media queries">
+  <meta name = "author" content = "Jeremiah James">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+  <!-- Note: type "module", not "javascript" -->
+  <script type = "module">
+
+    window.addEventListener('DOMContentLoaded', event => {
+      /* Your DOM just loaded */
+    });
+
+    window.onload = event => {
+      /* Your media (images, etc.) just loaded */
+    }
+
+  </script>
+
+  <style style = "text/css">
+
+    body {
+
+    }
+
+    #root {
+
+    }
+
+    main {
+      height: 100%;
+    }
+
+    * { font-family: Arial; }
+
+    /* padding shouldn't impact element width this is also CSS grid's default setting */
+    * { box-sizing: border-box }
+
+    /* vertical and horizontal align */
+    .f { display: flex; height: 100%; }
+    .v { align-items: center }
+    .h { justify-content: center }
+
+    /* default test item */
+    .f section {
+      width: auto;
+      height: auto;
+      background: black;
+      color: white;
+    }
+    .pic {
+      background: url(images/family.png);
+      background-size: 940px 480px;
+      border: 2px solid pink;
+      width: 940px;
+      height: 480px;
+    }
+    .rada
+    {
+      position:absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 2;
+    }
+    .fish
+    {
+      position:absolute;
+      top: 25px;
+      left: 25px;
+      z-index: 2;
+    }
+
+    /* Chrome applies blue "usability" background  to autofilled input boxes, but it's a nightmare for custom design */
+    input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active { -webkit-box-shadow: 0 0 0 30px white inset !important }
+
+    /* Remove Chrome outline (same reason as above) */
+    *:focus { outline: none }
+
+    /* Mobile first, means this media query first -- use min-width in ascending order
+    Smallest phone screen (iphone, android, etc.) */
+    @media screen and (min-width: 600px) {
+    * { background: black; }
+    }
+
+    /* Next wider view (iphone pro, etc) */
+    @media screen and (min-width: 800px) {
+      * { background: yellow; }
+    }
+
+    /* Next wider view (tablets) */
+    @media screen and (min-width: 1000px) {
+      * { background: green; }
+    }
+
+    /* Full screen desktop */
+    @media screen and (min-width: 1200px) {
+      * { background: blue; }
+    }
+
+
+  </style>
+
+</head>
+<body>
+  <main id = "root">
+    <div class="f v h">
+      <div class="pic">
+        
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
